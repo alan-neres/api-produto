@@ -76,6 +76,6 @@ jobs:
         with:
           manifests: 
             k8s/mongodb/deplyment.yaml
-            k8s/mongodb/services.yaml
+            k8s/mongodb/services.yaml 
       
       
