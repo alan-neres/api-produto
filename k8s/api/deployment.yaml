@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: aneresdevops/api-produto:v2
+        image: aneresdevops/api-produto
         ports:
         - containerPort: 8080
         env:
