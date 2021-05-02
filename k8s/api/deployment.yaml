@@ -23,7 +23,16 @@ spec:
           periodSeconds: 1
           timeoutSeconds: 1
           successThreshold: 1
-          failureThreshold: 1             
+          failureThreshold: 1
+        readinessProbe:
+          httpGet: 
+            path: /read
+            port: 8080
+          initialDelaySeconds: 0
+          periodSeconds: 1
+          timeoutSeconds: 1
+          successThreshold: 1
+          failureThreshold: 1               
         ports:
         - containerPort: 8080
         env:
