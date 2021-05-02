@@ -27,19 +27,19 @@ spec:
             path: /health
             port: 8080
           initialDelaySeconds: 0
-          periodSeconds: 1
+          periodSeconds: 10
           timeoutSeconds: 1
           successThreshold: 1
-          failureThreshold: 1
+          failureThreshold: 2
         readinessProbe:
           httpGet: 
             path: /read
             port: 8080
           initialDelaySeconds: 0
-          periodSeconds: 1
+          periodSeconds: 10
           timeoutSeconds: 1
           successThreshold: 1
-          failureThreshold: 1               
+          failureThreshold: 2               
         ports:
         - containerPort: 8080
         env:
